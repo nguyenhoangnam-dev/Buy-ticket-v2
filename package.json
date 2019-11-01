@@ -1,0 +1,30 @@
+{
+  "name": "Buy-ticket-v2",
+  "version": "1.0.0",
+  "description": "This is blog to practice using gulp",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/congviec18120062/Buy-ticket-v2.git"
+  },
+  "author": "H Nam <congviec18120062@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/congviec18120062/Buy-ticket-v2/issues"
+  },
+  "homepage": "https://github.com/congviec18120062/Buy-ticket-v2#readme",
+  "license": "MIT",
+  "private": null,
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-imagemin": "^6.1.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2"
+  }
+}
