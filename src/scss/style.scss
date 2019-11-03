@@ -1,3 +1,302 @@
-body {
-  background: red;
+@font-face {
+  font-family: "Roboto";
+  src: url('../font/Roboto-Medium.ttf');
 }
+
+@font-face {
+  font-family: "Rale";
+  src: url('../font/Raleway-Bold.ttf');
+}
+
+html, body {
+  padding: 0;
+  margin: 0; 
+}
+
+.header {
+  height: 100%;
+  background-repeat: none;
+  background-image: url("../img/banner_bg.min.jpg");
+  background-size: cover;
+}
+
+.header-mid {
+  width: 1110px;
+  margin: auto;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  
+  padding-top: 35px;
+  .right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 784px;
+    color: white;
+    font-family: Roboto;
+    font-size: 14px;
+  }
+}
+
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  .header-bottom-left {
+    color: white;
+    padding-top: 150px;
+
+  }
+
+  .header-bottom-right {
+    padding-top: 100px;
+  }
+}
+
+.header-singer>img {
+  width: 447px;
+}
+
+.header-address {
+  font-family: Roboto;
+  font-size: 1.1rem;
+}
+
+.header-logan {
+  font-family: Rale;
+  font-size: 4.2rem;
+  padding-top: 30px;
+}
+
+.header-time >{
+  div {
+    width: 108px;
+    height: 108px;
+    padding-right: 30px;
+    text-align: center;
+    font-family: Roboto;
+  }
+}
+
+.header-time {
+  display: flex;
+  padding-top: 40px;
+  padding-left: 15px;
+  .day {
+    background-image: url("../img/circle01.min.svg");
+    background-repeat: no-repeat;
+  }
+  .hour {
+    background-image: url("../img/circle02.min.svg");
+    background-repeat: no-repeat;
+  }
+  .minute {
+    background-image: url("../img/circle03.min.svg");
+    background-repeat: no-repeat;
+  }
+  .second {
+    background-image: url("../img/circle04.min.svg");
+    background-repeat: no-repeat;
+  }
+  .number{
+    padding-top: 30px;
+    font-size: 1.8rem;
+  }
+  .donvi {
+    font-size: 0.8rem;
+  }
+}
+
+.header-button {
+  margin-top: 40px;
+  padding: 20px 50px 20px 50px;
+  background-color: #ff007a;
+  width: 100px;
+  font-family: Roboto;
+  font-size: 1.1rem;
+}
+
+.content-first {
+  background-color: #f9fafc;
+}
+
+.content-first-mid {
+  display: flex;
+  width: 1110px;
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  .left{
+    width: 310px;
+    .top-1 {
+      color: #666767;
+      font-family: Roboto;
+      font-size: 0.9rem;
+    }
+    .title {
+      padding-top: 10px;
+      font-family: Rale;
+      font-size: 2.3rem;
+      color: #3b1d82;
+    }
+    .hr {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .bottom {
+      padding-top: 10px;
+      font-family: Roboto;
+      color: #666767;
+      font-size: 0.9rem;
+      line-height: 25px;
+    }
+    .header-button {
+      color: white;
+      padding: 15px 40px 15px 40px;
+    }
+  }
+  .right {
+    padding-left: 60px;
+    display: grid;
+    grid-gap: 30px 30px;
+    grid-template-columns: auto auto;
+  }
+  .right> {
+    div {
+      width: 310px;
+      box-sizing: content-box;
+      padding-left: 40px;
+      background-color: white;
+      box-shadow: 0px 20px 25px 0px rgba(0,0,0,0.08);
+      padding-bottom: 50px;
+      position: relative;
+    }
+  }
+}
+
+.right {
+  .card-title {
+    font-family: Rale;
+    font-size: 1.3rem;
+    padding-top: 40px;
+  }
+  .card-content {
+    font-family: Roboto;
+    padding-top: 20px;
+    width: 260px;
+    font-size: 0.95rem;
+    line-height: 25px;
+    color: #5a5a5a;
+  }
+  .card-number {
+    position: absolute; 
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+.content-second {
+  background-image: url("../img/speaker_bg.min.png");
+  text-align: center;
+  .top-1 {
+    padding-top: 100px;
+    color: #666767;
+    font-family: Roboto;
+    font-size: 0.9rem;
+  }
+  .title {
+    padding-top: 10px;
+    font-family: Rale;
+    font-size: 2.4rem;
+    color: #3b1d82;
+  }
+  .hr {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.people> {
+  div {
+    width: 256px;
+    height: 340px;
+  }
+}
+
+.people-mid {
+  width: 1110px;
+  margin: auto;
+}
+
+.people {
+  padding-top: 70px;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  font-family: Roboto;
+}
+
+.card {
+  padding-bottom: 65px;
+  .avatar {
+    width: 256px;
+    height: 256px;
+    border-radius: 50%;
+  }
+  .avatar> {
+    img {
+      width: 256px;
+      height: 256px;
+      border-radius: 50%;
+    }
+  }
+}
+
+.name {
+  padding-top: 20px;
+  font-size: 1.5rem;
+}
+.job {
+  padding-bottom: 10px;
+  font-size: 1rem;
+}
+
+.content-third {
+  width: 100%;
+  display: flex;
+
+  .left {
+    img {
+      height: 472px;
+    }
+  }
+  .right {
+    height: 472px;
+    width: 50%;
+    background-image: url("../img/cta_bg.min.png");
+    background-color: #1c1a4f;
+    background-position: right;
+    color: white;
+    padding-right: 170px;
+    padding-left: 80px;
+    .top-1 {
+      padding-top: 80px;
+      font-family: Roboto;
+      font-size: 1.1rem;
+    }
+    .title {
+      font-family: Rale;
+      font-size: 1.8rem;
+      padding-top: 20px;
+    }
+    .card-content {
+      font-family: Roboto;
+      color: white;
+      padding-top: 40px;
+      width: 100%;
+    }
+  }
+}
+
