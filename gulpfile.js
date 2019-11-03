@@ -81,6 +81,11 @@ function minifyHtml() {
     .pipe(dest('./docs'))
 }
 
+function fontCopy() {
+  return src('./src/font/*')
+    .pipe(dest('./docs/font'));
+}
+
 function cleanDist() {
   return src('./docs', { read: false })
     .pipe(clean());
@@ -95,6 +100,7 @@ exports.minifyHtml = minifyHtml;
 exports.cleanDist = cleanDist;
 exports.default = series(cleanDist, parallel(
   minifyImage, parallel(
-    minifyJs, parallel(minifyCss, minifyHtml)
+    minifyJs, parallel(
+      minifyCss, parallel(minifyHtml, fontCopy))
   )
 ));
